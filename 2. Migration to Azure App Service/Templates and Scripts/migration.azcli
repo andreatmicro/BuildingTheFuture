@@ -1,0 +1,4 @@
+az group create -n <Resource Group Name> -l WestEurope
+az appservice plan create -g <Resource Group Name> -n <App Service Plan Name> -l WestEurope
+az webapp create -n <Unique App Name> -p <App Service Plan Name> -g <Resource Group Name>
+az webapp deployment source config-zip -g <Resource Group Name> -n <Unique App Name> --src ./BuildingTheFuture.zip
